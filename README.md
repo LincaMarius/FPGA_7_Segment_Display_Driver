@@ -1,4 +1,4 @@
-# FPGA driver for 7-Segment 1-digit LED display
+# FPGA driver for 7-segment LED display from 1 digit to 8 digits
 In this project I designed a driver in FPGA to control a single digit of a 7-Segment LED display. The Display is controlled directly without the help of an external chip.
 
 I have a development board purchased from the Chinese company Piswords which is a cheaper clone of the AX301 product from the Chinese company ALINX.
@@ -56,3 +56,5 @@ We will see that the designers of the two boards used resistors with a value of 
 This value is greater than the nominal value of 8 mA but is less than the maximum limit of -25 mA and +40 mA.
 
 ## Single digit display
+The design of a driver in FPGA for a single-digit 7-Segment LED Display is presented here:
+
