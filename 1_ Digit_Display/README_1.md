@@ -12,3 +12,4 @@ The electrical diagram for connecting a common anode 7-Segment LED display to th
 
 The electrical diagram for connecting the 7 Segment LED display, digit 7 (the one positioned on the right) of the common cathode type on the Piswords FPGA board to the FPGA pins, or digit 5 ​​(the one positioned on the right) of the common cathode type on the ALINX AX301 FPGA board to the FPGA pins is shown in figure 1.C.
 
+![ Figure 1 ](/Pictures/Figure1.png)
