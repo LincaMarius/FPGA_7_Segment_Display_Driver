@@ -13,3 +13,9 @@ The electrical diagram for connecting a common anode 7-Segment LED display to th
 The electrical diagram for connecting the 7 Segment LED display, digit 7 (the one positioned on the right) of the common cathode type on the Piswords FPGA board to the FPGA pins, or digit 5 ​​(the one positioned on the right) of the common cathode type on the ALINX AX301 FPGA board to the FPGA pins is shown in figure 1.C.
 
 ![ Figure 1 ](/Pictures/Figure1.png)
+
+## Display BCD encoded binary number on a 7 Segment Common Carod type LED display
+BCD stands for Binary-Coded Decimal and is used In computing and electronic systems is a class of Binary Encodings of decimal numbers where each digit is represented by a fixed number of bits, usually four.
+
+BCD encoding is not unique, there are many variations. I will use simple BCD encoding, also called 8421 encoding.
+
