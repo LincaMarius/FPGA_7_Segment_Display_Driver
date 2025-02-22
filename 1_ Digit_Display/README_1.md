@@ -95,3 +95,4 @@ A representation of the modules used and the connection signals between them is 
 
 The source code for the test application written in VHDL is here:
 
+https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Display/Aplication_1.vhd
