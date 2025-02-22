@@ -100,3 +100,8 @@ https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digi
 The source code for the test application written in the Verilog language is here:
 
 https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Display/Aplication_1.v
+
+To test the code of the test application titled "Application 1" I created a Test Bench that can be represented as in the following figure:
+
+![ Figure 5 ](/Pictures/Figure5.png)
+
