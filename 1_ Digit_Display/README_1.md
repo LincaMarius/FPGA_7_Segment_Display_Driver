@@ -105,3 +105,6 @@ To test the code of the test application titled "Application 1" I created a Test
 
 ![ Figure 5 ](/Pictures/Figure5.png)
 
+The source code for the Test Bench of the application "Application 1" written in the VHDL language is here:
+
+https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Display/ Aplication_1_tb.vhd
