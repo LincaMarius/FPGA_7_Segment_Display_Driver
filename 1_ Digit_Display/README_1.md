@@ -63,7 +63,7 @@ The module has:
 
 The source code for the FPGA program written in VHDL is as follows:
 
-
+https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Display/BCD_to_1_Digit.vhd
 
 
 For testing, we created a test bench that can be seen in figure 3.
