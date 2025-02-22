@@ -7,10 +7,10 @@ use IEEE.std_logic_unsigned.all;
 entity BCD_to_1_Digit_CA is
     Port (
 		BCD_in: in STD_LOGIC_VECTOR (3 downto 0);
-		bp_in: in STD_LOGIC; 	-- BP signal
+		dp_in: in STD_LOGIC; -- DP signal
 		Segments: out STD_LOGIC_VECTOR (6 downto 0); -- Cathode segments 
-		bp: out STD_LOGIC;	-- BP on Piswords PIAX301V2 FPGA board
-		SEL7:	out STD_LOGIC	-- SEL7 on Piswords PIAX301V2 FPGA board
+		dp: out STD_LOGIC; -- DP on Piswords PIAX301V2 FPGA board
+		SEL7:	out STD_LOGIC -- SEL7 on Piswords PIAX301V2 FPGA board
 		);		
 end BCD_to_1_Digit_CA;
 
@@ -32,6 +32,6 @@ begin
 						"1111111" WHEN OTHERS;	--default blank
 						
 	SEL7 <= '0';
-	bp <= bp_in;
+	dp <= dp_in;
 
 end Behavioral;

@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.std_logic_unsigned.all;
 
--- frequency divider from 50 MHz to 2 Hz
+-- binary counter - counts from 0 to 16
 entity Counter16 is
 	Port 
 	( 

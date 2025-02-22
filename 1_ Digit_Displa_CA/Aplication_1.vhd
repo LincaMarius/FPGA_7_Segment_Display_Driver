@@ -2,14 +2,14 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 -- Aplicațion for testing
--- BCD to one Digit 7-Segment Display FPGA Driver
+-- BCD to one Digit 7-Segment Common Anode Display FPGA Driver
 
 entity Aplication_1 is
     Port (
 		clk50MHz: in STD_LOGIC; -- Main clock 50 MHz
 		rst_n: in STD_LOGIC; -- Reset button
 		Segments: out STD_LOGIC_VECTOR (6 downto 0); -- Cathode segments control outputs 
-		bp: out STD_LOGIC; -- BP on Piswords PIAX301V2 FPGA board control output
+		dp: out STD_LOGIC; -- DP on Piswords PIAX301V2 FPGA board control output
 		SEL7:	out STD_LOGIC -- SEL7 on Piswords PIAX301V2 FPGA board control output
 		);		
 end Aplication_1;
@@ -17,13 +17,13 @@ end Aplication_1;
 architecture Behavioral of Aplication_1 is
 
 -- we declare the components
-component BCD_to_1_Digit is
+component BCD_to_1_Digit_CA is
     Port (
 		BCD_in: in STD_LOGIC_VECTOR (3 downto 0); -- BCD data input
-		bp_in: in STD_LOGIC; 	-- BP signal
+		dp_in: in STD_LOGIC; -- DP signal
 		Segments: out STD_LOGIC_VECTOR (6 downto 0); -- Cathode segments 
-		bp: out STD_LOGIC;	-- BP on Piswords PIAX301V2 FPGA board
-		SEL7:	out STD_LOGIC	-- SEL7 on Piswords PIAX301V2 FPGA board
+		dp: out STD_LOGIC; -- DP on Piswords PIAX301V2 FPGA board
+		SEL7:	out STD_LOGIC -- SEL7 on Piswords PIAX301V2 FPGA board
 		);
 end component;
 
@@ -39,7 +39,7 @@ end component;
 component Counter16 is
 	Port 
 	( 
-		clk 	: IN	STD_LOGIC;
+		clk 		: IN	STD_LOGIC;
 		rst_n		: IN	STD_LOGIC;
 		count 	: OUT	STD_LOGIC_VECTOR (3 downto 0)
 	);
@@ -51,11 +51,11 @@ SIGNAL BCD_data: STD_LOGIC_VECTOR (3 downto 0) := "0000";
 
 begin
 -- modules mapping           
-decoder : component BCD_to_1_Digit port map (
+decoder : component BCD_to_1_Digit_CA port map (
 	BCD_in => BCD_data,
-	bp_in => BCD_data(0),
+	dp_in => BCD_data(0),
 	Segments => Segments,
-	bp => bp,
+	dp => dp,
 	SEL7 => SEL7);
 	
 clk_2_Hz : component Clk_2Hz port map (

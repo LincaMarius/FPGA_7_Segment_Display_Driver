@@ -12,10 +12,10 @@ architecture testbench of BCD_to_1_Digit_CA_tb is
 component BCD_to_1_Digit_CA is
     Port (
 		BCD_in: in STD_LOGIC_VECTOR (3 downto 0); -- BCD data input
-		bp_in: in STD_LOGIC; 	-- BP signal
+		dp_in: in STD_LOGIC; -- DP signal
 		Segments: out STD_LOGIC_VECTOR (6 downto 0); -- Cathode segments 
-		bp: out STD_LOGIC;	-- BP on Piswords PIAX301V2 FPGA board
-		SEL7:	out STD_LOGIC	-- SEL7 on Piswords PIAX301V2 FPGA board
+		dp: out STD_LOGIC; -- DP on Piswords PIAX301V2 FPGA board
+		SEL7:	out STD_LOGIC -- SEL7 on Piswords PIAX301V2 FPGA board
 		);
 end component;
 
@@ -32,7 +32,7 @@ end component;
 component Counter16 is
 	Port 
 	( 
-		clk 	: IN	STD_LOGIC;
+		clk 		: IN	STD_LOGIC;
 		rst_n		: IN	STD_LOGIC;
 		count 	: OUT	STD_LOGIC_VECTOR (3 downto 0)
 	);
@@ -43,7 +43,7 @@ SIGNAL BCD_tb: STD_LOGIC_VECTOR (3 downto 0) := "0000";
 
 -- output signals of the module under test
 SIGNAL SEG_tb: STD_LOGIC_VECTOR (6 downto 0);
-SIGNAL bp_tb: STD_LOGIC;
+SIGNAL dp_tb: STD_LOGIC;
 SIGNAL SEL7_tb: STD_LOGIC;
 
 -- other input signals
@@ -66,9 +66,9 @@ end process;
 -- unit under test port maping           
 uut : component BCD_to_1_Digit_CA port map (
 	BCD_in => BCD_tb,
-	bp_in => BCD_tb(0),
+	dp_in => BCD_tb(0),
 	Segments => SEG_tb,
-	bp => bp_tb,
+	dp => dp_tb,
 	SEL7 => SEL7_tb);
 	
 clk2Hz : component Clk_2Hz port map (

@@ -1,7 +1,9 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
--- VHDL code for test bench for BCD to one Digit 7-Segment Display FPGA Driver
+-- VHDL code for Aplication 1 test bench
+-- who uses
+-- BCD to one Digit 7-Segment C0mm0n Anode Display FPGA Driver
 
 entity Aplication_1_tb is	
 end Aplication_1_tb;
@@ -14,7 +16,7 @@ component Aplication_1 is
 		clk50MHz: in STD_LOGIC; -- Main clock 50 MHz
 		rst_n: in STD_LOGIC; -- Reset button
 		Segments: out STD_LOGIC_VECTOR (6 downto 0); -- Cathode segments control outputs 
-		bp: out STD_LOGIC; -- BP on Piswords PIAX301V2 FPGA board control output
+		dp: out STD_LOGIC; -- DP on Piswords PIAX301V2 FPGA board control output
 		SEL7:	out STD_LOGIC -- SEL7 on Piswords PIAX301V2 FPGA board control output
 		);	
 end component;
@@ -25,7 +27,7 @@ SIGNAL rst_n: std_logic := '0';
 
 -- output signals of the module under test
 SIGNAL SEG_tb: STD_LOGIC_VECTOR (6 downto 0);
-SIGNAL bp_tb: STD_LOGIC;
+SIGNAL dp_tb: STD_LOGIC;
 SIGNAL SEL7_tb: STD_LOGIC;
 
 begin
@@ -43,7 +45,7 @@ uut : component Aplication_1 port map (
 	clk50MHz => clk50MHz_tb,
 	rst_n => rst_n,
 	Segments => SEG_tb,
-	bp => bp_tb,
+	dp => dp_tb,
 	SEL7 => SEL7_tb);
 	
 -- the testing process
