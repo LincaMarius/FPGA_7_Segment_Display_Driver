@@ -41,12 +41,12 @@ So to transmit the information we will need 4 bits for the first two cases and 7
 
 We still need one more bit to encode the decimal point if we want to use it.
 
-## Display BCD encoded binary number on a 7 Segment Common Carod type LED display
+## Display BCD encoded binary number on a 7 Segment Common Anode LED display
 BCD stands for Binary-Coded Decimal and is used In computing and electronic systems is a class of Binary Encodings of decimal numbers where each digit is represented by a fixed number of bits, usually four.
 
 BCD encoding is not unique, there are many variations. I will use simple BCD encoding, also called 8421 encoding.
 
-Connecting the 7 Segment Common Cathode LED display to the FPGA chip is done as in figures 1A, 1C and 1D. For other boards, the connected pin number is indicated.
+Connecting the 7 Segment Common Anode LED display to the FPGA chip is done as in figures 1B, 1C and 1D. For other development boards, the number for each connected pin is changed accordingly.
 
 Seg0 to Seg6 represent the Segment command, which corresponds to segments a to g of the 7-segment display. BP is the Decimal Point command. SEL5 is the Select Digit 5 ​​command, and SEL7 is the Select Digit 7 command.
 
@@ -112,3 +112,9 @@ https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digi
 The source code for the Test Bench of the application "Application 1" written in the Verilog language is here:
 
 https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Display/Aplication_1_tb.v
+
+## Display BCD encoded binary number on a 7 Segment Common Cathode LED display
+Connecting the Common Cathode 7 Segment LED display to the FPGA chip is done as in Figure 1A. For other development boards, the number for each connected pin is changed accordingly.
+
+Seg0 to Seg6 represent the Segment command, which corresponds to segments a to g of the 7-segment display. BP is the Decimal Point command.
+
