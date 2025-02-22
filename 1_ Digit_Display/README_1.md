@@ -61,4 +61,10 @@ The module has:
 - 1 output pin for controlling the Decimal Point of the 7 Segment display;
 - 1 output pin for controlling SEL5 or SEL7 in the case of embedded displays.
 
+The source code for the FPGA program written in VHDL is as follows:
+
+
+
+
+For testing, we created a test bench that can be seen in figure 3.
 
