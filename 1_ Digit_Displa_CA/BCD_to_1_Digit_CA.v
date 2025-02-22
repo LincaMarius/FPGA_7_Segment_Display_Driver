@@ -3,9 +3,9 @@
 
 module BCD_to_1_Digit_CA (
 	input [3:0] BCD_in,
-	input bp_in,
+	input dp_in,
 	output reg [6:0] Segments,
-	output bp,
+	output dp,
 	output SEL7
 	);
 
@@ -28,6 +28,6 @@ begin
 end
 
 	assign SEL7 = 0;
-	assign bp = bp_in;	
+	assign dp = dp_in;	
 
 endmodule

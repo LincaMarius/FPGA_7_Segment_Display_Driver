@@ -8,12 +8,9 @@ module Counter16 (
 	output[3:0] count
 );
 
-
-
-
 reg[3:0] timer;
 
-always@(posedge clk or posedge rst_n)
+always@(posedge clk or negedge rst_n)
 begin
 	if (rst_n == 1'b0)
 			timer <= 16'd0;

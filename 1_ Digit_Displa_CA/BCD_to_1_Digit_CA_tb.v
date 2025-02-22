@@ -9,7 +9,7 @@ wire[3:0] BCD_tb;
 
 // output signals of the module under test
 wire[6:0] SEG_tb;
-reg bp_tb;
+reg dp_tb;
 reg SEL7_tb;
 
 // other input signals
@@ -33,9 +33,9 @@ always#10 clk_tb = ~clk_tb;
 BCD_to_1_Digit_CA dut
 (
 	.BCD_in		(BCD_tb),
-	.bp_in		(BCD_tb[0]),
+	.dp_in		(BCD_tb[0]),
 	.Segments 	(SEG_tb),
-	.bp			(bp_tb),
+	.dp			(dp_tb),
 	.SEL7			(SEL7_tb)
 );
 

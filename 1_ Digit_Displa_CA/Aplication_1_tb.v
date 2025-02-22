@@ -12,7 +12,7 @@ reg rst_n;
 
 // output signals of the module under test
 wire[6:0] SEG_tb;
-reg bp_tb;
+reg dp_tb;
 reg SEL7_tb;
 
 initial
@@ -32,7 +32,7 @@ BCD_to_1_Digit dut
 	.clk50MHz	(clk50MHz_tb),
 	.rst_n		(rst_n),
 	.Segments 	(SEG_tb),
-	.bp			(bp_tb),
+	.dp			(dp_tb),
 	.SEL7			(SEL7_tb)
 );
 	
