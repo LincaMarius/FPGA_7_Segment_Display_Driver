@@ -10,7 +10,7 @@ module Clk_2Hz (
 reg clk = 1'b0;
 reg [24:0] timer;
 
-always@(posedge clk or negedge rst_n)
+always@(posedge clk_in or negedge rst_n)
 begin
 	if (rst_n == 1'b0)
 		begin
@@ -25,5 +25,7 @@ begin
 	else  			
 		timer <= timer + 32'd1; 					
 end
+
+assign clk_out = clk;
 
 endmodule
