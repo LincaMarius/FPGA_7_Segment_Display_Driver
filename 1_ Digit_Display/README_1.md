@@ -46,3 +46,19 @@ BCD stands for Binary-Coded Decimal and is used In computing and electronic syst
 
 BCD encoding is not unique, there are many variations. I will use simple BCD encoding, also called 8421 encoding.
 
+Connecting the 7 Segment Common Cathode LED display to the FPGA chip is done as in figures 1A, 1C and 1D. For other boards, the connected pin number is indicated.
+
+Seg0 to Seg6 represent the Segment command, which corresponds to segments a to g of the 7-segment display. BP is the Decimal Point command. SEL5 is the Select Digit 5 ​​command, and SEL7 is the Select Digit 7 command.
+
+The Module implemented in the FPGA is shown in Figure 2 and consists of a BCD to 7 Segment decoder.
+
+![ Figure 2 ](/Pictures/Figure2.png)
+
+The module has:
+- 4 input pins for data where the BCD code is presented;
+- 1 input pin for control of the Decimal Point;
+- 7 output pins for controlling segments a to g of the 7 Segment display;
+- 1 output pin for controlling the Decimal Point of the 7 Segment display;
+- 1 output pin for controlling SEL5 or SEL7 in the case of embedded displays.
+
+
