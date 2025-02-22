@@ -89,5 +89,9 @@ https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digi
 
 After testing the code through simulation using the test bench, the practical use of the driver implemented in a practical application follows. For this purpose, we created an application that counts from 0 to 9 and then displays only the decimal point. The application is created starting from the test bench previously used for testing.
 
+A representation of the modules used and the connection signals between them is shown in figure 4.
+
+![ Figure 4 ](/Pictures/Figure4.png)
+
 The source code for the test application written in VHDL is here:
 
