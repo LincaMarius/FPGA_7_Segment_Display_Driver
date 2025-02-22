@@ -72,3 +72,13 @@ https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digi
 To test the correctness of the code, I created a test bench whose structure can be seen in figure 3.
 
 ![ Figure 3 ](/Pictures/Figure3.png)
+
+I started from the 50 MHz clock frequency of the main oscillator present on the Piswords PIAX301V2 development board, identical to that on the ALINX AX301 board.
+
+This clock signal is applied to a counter with 25000000 which at the output on bit 24 will present a signal with a frequency of 2 Hz.
+
+The 2 Hz signal is applied to a 16-bit counter. Its outputs are applied directly as the “BCD_in” input signal for the module under test. Bit 0 is applied as the “bp_in” input signal. Thus, the BP segment will light up every second indicating the test operation.
+
+The source code for the test bench program written in VHDL is as follows:
+
+The source code for the test bench program scrin in the Verilog language is as follows:
