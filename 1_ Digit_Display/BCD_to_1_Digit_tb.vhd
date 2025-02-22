@@ -38,15 +38,13 @@ component Counter16 is
 	);
 end component;
 
-
 -- input signals of the mode under test
-SIGNAL BCD_in: STD_LOGIC_VECTOR (3 downto 0) := "0000";
-SIGNAL bp_in: STD_LOGIC := '0';
+SIGNAL BCD_tb: STD_LOGIC_VECTOR (3 downto 0) := "0000";
 
 -- output signals of the module under test
-SIGNAL Segments: STD_LOGIC_VECTOR (6 downto 0);
-SIGNAL bp: STD_LOGIC;
-SIGNAL SEL7: STD_LOGIC;
+SIGNAL SEG_tb: STD_LOGIC_VECTOR (6 downto 0);
+SIGNAL bp_tb: STD_LOGIC;
+SIGNAL SEL7_tb: STD_LOGIC;
 
 -- other input signals
 SIGNAL clk_tb: std_logic := '0';
@@ -65,14 +63,13 @@ begin
 	wait for 10 ns;	
 end process;
 
-
 -- unit under test port maping           
 uut : component BCD_to_1_Digit port map (
-	BCD_in => BCD_in,
-	bp_in => bp_in,
-	Segments => Segments,
-	bp => bp,
-	SEL7 => SEL7);
+	BCD_in => BCD_tb,
+	bp_in => BCD_tb(0),
+	Segments => SEG_tb,
+	bp => bp_tb,
+	SEL7 => SEL7_tb);
 	
 clk2Hz : component Clk_2Hz port map (
 	clk_in => clk_tb,
@@ -80,9 +77,9 @@ clk2Hz : component Clk_2Hz port map (
 	clk_out => clk2Hz_tb);
 	
 counttb : component Counter16 port map (
-	clk => clk_tb,
+	clk => clk2Hz_tb,
 	rst_n	=> rst_n,
-	count => BCD_in);
+	count => BCD_tb);
 	
 -- the testing process
 stimuli : process 
