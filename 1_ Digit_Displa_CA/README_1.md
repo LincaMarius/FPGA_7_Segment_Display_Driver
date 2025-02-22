@@ -77,11 +77,11 @@ I started from the 50 MHz clock frequency of the main oscillator present on the 
 
 This clock signal is applied to a counter with 25000000 which at the output on bit 24 will present a signal with a frequency of 2 Hz.
 
-The 2 Hz signal is applied to a 16-bit counter. Its outputs are applied directly as the “BCD_in” input signal for the module under test. Bit 0 is applied as the “bp_in” input signal. Thus, the BP segment will light up every second indicating the test operation.
+The 2 Hz signal is applied to a 16-bit counter. Its outputs are applied directly as the “BCD_in” input signal for the module under test. Bit 0 is applied as the “bp_in” input signal. Thus, the BP segment will light up every second indicating that the test is running.
 
 The source code for the test bench program written in VHDL is as follows:
 
-https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Display/BCD_to_1_Digit_tb.vhd
+https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CA/BCD_to_1_Digit_CA_tb.vhd
 
 The source code for the test bench program written in the Verilog language is as follows:
 

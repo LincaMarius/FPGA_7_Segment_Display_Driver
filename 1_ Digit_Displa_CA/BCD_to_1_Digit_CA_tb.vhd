@@ -3,13 +3,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- VHDL code for test bench for BCD to one Digit 7-Segment Display FPGA Driver
 
-entity BCD_to_1_Digit_tb is	
-end BCD_to_1_Digit_tb;
+entity BCD_to_1_Digit_CA_tb is	
+end BCD_to_1_Digit_CA_tb;
 
-architecture testbench of BCD_to_1_Digit_tb is
+architecture testbench of BCD_to_1_Digit_CA_tb is
 
 -- we declare the components under test
-component BCD_to_1_Digit is
+component BCD_to_1_Digit_CA is
     Port (
 		BCD_in: in STD_LOGIC_VECTOR (3 downto 0); -- BCD data input
 		bp_in: in STD_LOGIC; 	-- BP signal
@@ -64,7 +64,7 @@ begin
 end process;
 
 -- unit under test port maping           
-uut : component BCD_to_1_Digit port map (
+uut : component BCD_to_1_Digit_CA port map (
 	BCD_in => BCD_tb,
 	bp_in => BCD_tb(0),
 	Segments => SEG_tb,
