@@ -83,4 +83,7 @@ The source code for the test bench program written in VHDL is as follows:
 
 https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Display/BCD_to_1_Digit_tb.vhd
 
-The source code for the test bench program scrin in the Verilog language is as follows:
+The source code for the test bench program written in the Verilog language is as follows:
+
+https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Display/BCD_to_1_Digit_tb.v
+
