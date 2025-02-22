@@ -122,10 +122,3 @@ The Module implemented in the FPGA is shown in Figure 6 and consists of a BCD to
 
 ![ Figure 6 ](/Pictures/Figure6.png)
 
-The module has:
-- 4 input pins for data where the BCD code is presented = BCD_in;
-- 1 input pin for control of the Decimal Point = DP_in;
-- 7 output pins for controlling segments a to g of the 7 Segment display = Segments;
-- 1 output pin for controlling the Decimal Point of the 7 Segment display = dp;
-
-The source code for the FPGA program written in VHDL is as follows:

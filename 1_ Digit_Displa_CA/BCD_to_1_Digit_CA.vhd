@@ -2,9 +2,9 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.std_logic_unsigned.all;
 
--- VHDL code for BCD to one Digit 7-Segment Display FPGA Driver
+-- VHDL code for BCD to one Digit 7-Segment Common Anode Display FPGA Driver
 
-entity BCD_to_1_Digit is
+entity BCD_to_1_Digit_CA is
     Port (
 		BCD_in: in STD_LOGIC_VECTOR (3 downto 0);
 		bp_in: in STD_LOGIC; 	-- BP signal
@@ -12,12 +12,13 @@ entity BCD_to_1_Digit is
 		bp: out STD_LOGIC;	-- BP on Piswords PIAX301V2 FPGA board
 		SEL7:	out STD_LOGIC	-- SEL7 on Piswords PIAX301V2 FPGA board
 		);		
-end BCD_to_1_Digit;
+end BCD_to_1_Digit_CA;
 
-architecture Behavioral of BCD_to_1_Digit is
+architecture Behavioral of BCD_to_1_Digit_CA is
 
 begin
-	with BCD_in select                   
+	with BCD_in select
+					 -- gfedcba - active low	
 		Segments <= "1000000" WHEN "0000", --0, active a,b,c,d,e,f segments
 						"1111001" WHEN "0001", --1, active b,c segments
 						"0100100" WHEN "0010", --2, active a,b,d,e,g segments
