@@ -118,3 +118,7 @@ Connecting the Common Cathode 7 Segment LED display to the FPGA chip is done as 
 
 Seg0 to Seg6 represent the Segment command, which corresponds to segments a to g of the 7-segment display. BP is the Decimal Point command.
 
+The Module implemented in the FPGA is shown in Figure 6 and consists of a BCD to 7 Segment decoder.
+
+![ Figure 6 ](/Pictures/Figure6.png)
+
