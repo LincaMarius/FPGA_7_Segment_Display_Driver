@@ -1,7 +1,7 @@
 
-// Verilog code for BCD to one Digit 7-Segment Display FPGA Driver
+// Verilog code for BCD to one Digit 7-Segment Common Anode Display FPGA Driver
 
-module BCD_to_1_Digit (
+module BCD_to_1_Digit_CA (
 	input [3:0] BCD_in,
 	input bp_in,
 	output reg [6:0] Segments,
