@@ -2,7 +2,7 @@
 
 // Verilog code for test bench fot BCD to one Digit 7-Segment Display FPGA Driver
 
-module BCD_to_1_Digit_tb;
+module BCD_to_1_Digit_CA_tb;
 
 // input signals of the mode under test
 wire[3:0] BCD_tb;
@@ -30,7 +30,7 @@ end
 always#10 clk_tb = ~clk_tb;
 
 // we declare the components under test
-BCD_to_1_Digit dut
+BCD_to_1_Digit_CA dut
 (
 	.BCD_in		(BCD_tb),
 	.bp_in		(BCD_tb[0]),

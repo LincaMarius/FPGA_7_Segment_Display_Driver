@@ -85,7 +85,7 @@ https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digi
 
 The source code for the test bench program written in the Verilog language is as follows:
 
-https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Display/BCD_to_1_Digit_tb.v
+https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CA/BCD_to_1_Digit_CA_tb.v
 
 After testing the code through simulation using the test bench, the practical use of the driver implemented in a practical application follows. For this purpose, we created an application that counts from 0 to 9 and then displays only the decimal point. The application is created starting from the test bench previously used for testing.
 
