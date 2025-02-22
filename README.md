@@ -64,4 +64,4 @@ This value is greater than the nominal value of 8 mA but is less than the maximu
 ## Single digit display
 The design of a driver in FPGA for a single-digit 7-Segment LED Display is presented here:
 
-https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Display/README_1.md
+https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CA/README_1.md
