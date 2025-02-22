@@ -55,15 +55,15 @@ The Module implemented in the FPGA is shown in Figure 2 and consists of a BCD to
 ![ Figure 2 ](/Pictures/Figure2.png)
 
 The module has:
-- 4 input pins for data where the BCD code is presented;
-- 1 input pin for control of the Decimal Point;
-- 7 output pins for controlling segments a to g of the 7 Segment display;
-- 1 output pin for controlling the Decimal Point of the 7 Segment display;
-- 1 output pin for controlling SEL5 or SEL7 in the case of embedded displays.
+- 4 input pins for data where the BCD code is presented = BCD_in;
+- 1 input pin for control of the Decimal Point = DP_in;
+- 7 output pins for controlling segments a to g of the 7 Segment display = Segments;
+- 1 output pin for controlling the Decimal Point of the 7 Segment display = dp;
+- 1 output pin for controlling SEL5 or SEL7 in the case of embedded displays = SEL7.
 
 The source code for the FPGA program written in VHDL is as follows:
 
-https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Display/BCD_to_1_Digit.vhd
+https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CA/BCD_to_1_Digit_CA.vhd
 
 The source code for the FPGA program written in Verilog is as follows:
 
