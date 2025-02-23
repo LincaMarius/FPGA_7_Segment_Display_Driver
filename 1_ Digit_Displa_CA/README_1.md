@@ -136,3 +136,7 @@ The source code for the FPGA program written in Verilog is as follows:
 
 https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CC/BCD_to_1_Digit_CC.v
 
+To test the correctness of the code, I created a test bench whose structure can be seen in figure 7.
+
+![ Figure 7 ](/Pictures/Figure7.png)
+
