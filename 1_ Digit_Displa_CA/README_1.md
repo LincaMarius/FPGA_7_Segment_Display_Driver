@@ -173,3 +173,12 @@ https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digi
 The source code for the Test Bench of the application "Application 2" written in the Verilog language is here:
 
 https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CC/Aplication_2_tb.v
+
+## Display binary number in hexadecimal on a 7 Segment Common Anode LED display
+Connecting the 7 Segment Common Anode LED display to the FPGA chip is done as in figures 1B, 1C and 1D. For other development boards, the number for each connected pin is changed accordingly.
+
+Seg0 to Seg6 represent the Segment command, which corresponds to segments a to g of the 7-segment display. BP is the Decimal Point command. SEL5 is the Select Digit 5 command, and SEL7 is the Select Digit 7 command.
+
+The module implemented in the FPGA is shown in Figure 10 and consists of a 7-Segment hexadecimal decoder.
+
+![ Figure 10 ](/Pictures/Figure10.png)
