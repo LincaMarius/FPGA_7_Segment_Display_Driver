@@ -182,3 +182,15 @@ Seg0 to Seg6 represent the Segment command, which corresponds to segments a to g
 The module implemented in the FPGA is shown in Figure 10 and consists of a 7-Segment hexadecimal decoder.
 
 ![ Figure 10 ](/Pictures/Figure10.png)
+
+The module has:
+- 4 input pins for data where the BCD code is presented = HEX_in;
+- 1 input pin for control of the Decimal Point = DP_in;
+- 7 output pins for controlling segments a to g of the 7 Segment display = Segments;
+- 1 output pin for controlling the Decimal Point of the 7 Segment display = dp;
+- 1 output pin for controlling SEL5 or SEL7 in the case of embedded displays = SEL7.
+
+The source code for the FPGA program written in VHDL is as follows:
+
+https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CA/HEX_to_1_Digit_CA.vhd
+
