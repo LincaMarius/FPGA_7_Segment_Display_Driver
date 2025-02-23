@@ -355,3 +355,5 @@ To test the code of the test application titled "Application 5" I created a Test
 
 ![ Figure 21 ](/Pictures/Figure21.png)
 
+https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CA/Aplication_5_tb.vhd
+
