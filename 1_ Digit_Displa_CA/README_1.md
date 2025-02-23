@@ -355,5 +355,11 @@ To test the code of the test application titled "Application 5" I created a Test
 
 ![ Figure 21 ](/Pictures/Figure21.png)
 
+The source code for the Test Bench of the application "Application 5" written in the VHDL language is here:
+
 https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CA/Aplication_5_tb.vhd
+
+The source code for the Test Bench of the application "Application 5" written in the Verilog language is here:
+
+https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CA/Aplication_5_tb.v
 
