@@ -398,3 +398,9 @@ The source code for the test bench program written in the Verilog language is as
 
 https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CC/ASCII_to_1_Digit_CC_tb.v
 
+I have made a test application that counts from 0 to 128 to display all the characters implemented in this decoder and at the same time the decimal point flashes every second to indicate that the program is running. The application is made starting from the test bench used previously for tests.
+
+A representation of the modules used and the connection signals between them is shown in figure 24.
+
+![ Figure 24 ](/Pictures/Figure24.png)
+
