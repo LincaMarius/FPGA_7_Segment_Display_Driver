@@ -65,3 +65,24 @@ This value is greater than the nominal value of 8 mA but is less than the maximu
 The design of a driver in FPGA for a single-digit 7-Segment LED Display is presented here:
 
 https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CA/README_1.md
+
+## Multi-digit display
+For a single digit display, 8 control pins and 8 current limiting resistors are required.
+
+For a two-digit display, 16 control pins and 16 current-limiting resistors are required.
+
+For an eight-digit display, 64 control pins and 64 current-limiting resistors are required.
+
+This requires the use of multiplexed display technology to reduce the resources used to control the display.
+
+The advantage of using multiplexed display techniques can be seen very easily if we compare the resources required for direct control and multiplexed control.
+
+In the case of direct command to control an 8-digit display, 64 pins and 64 current-limiting resistors must be used.
+
+In the case of multiplexing control for controlling an 8-digit display, 16 pins and 16 current-limiting resistors plus 8 transistors as current amplifiers must be used as previously explained.
+
+This saves 48 pins and 48 resistors
+
+The number of pins can be reduced by another 5 if an external 3 to 8 decoder is used, with a total of only 11 pins needed to control an 8-digit display compared to 64 pins for direct control!
+
+The design of a driver in FPGA for a 7 Segment LED Display with multiple digits is presented here:
