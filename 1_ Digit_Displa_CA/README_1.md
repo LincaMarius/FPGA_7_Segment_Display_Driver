@@ -363,3 +363,12 @@ The source code for the Test Bench of the application "Application 5" written in
 
 https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CA/Aplication_5_tb.v
 
+## Display ASCII alphanumeric character on a 7 Segment Common Cathode LED display
+Connecting the Common Cathode 7 Segment LED display to the FPGA chip is done as in Figure 1A. For other development boards, the number for each connected pin is changed accordingly.
+
+Seg0 to Seg6 represent the Segment command, which corresponds to segments a to g of the 7-segment display. DP is the Decimal Point command.
+
+The module implemented in the FPGA is shown in figure 22 and consists of an ASCII to 7 Segment decoder.
+
+![ Figure 22 ](/Pictures/Figure22.png)
+
