@@ -273,3 +273,9 @@ The source code for the test bench program written in the Verilog language is as
 
 https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CC/HEX_to_1_Digit_CC_tb.v
 
+A test application that counts from 0 to F while the decimal point flashes every second. The application is built from the test bench previously used for testing.
+
+A representation of the modules used and the connection signals between them is shown in figure 16.
+
+![ Figure 16 ](/Pictures/Figure16.png)
+
