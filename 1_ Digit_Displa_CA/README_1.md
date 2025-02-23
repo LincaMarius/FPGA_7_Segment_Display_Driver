@@ -162,3 +162,7 @@ The source code for the test application written in the Verilog language is here
 
 https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CC/Aplication_2.v
 
+To test the code of the test application titled "Application 2" I created a Test Bench that can be represented as in the following figure:
+
+![ Figure 9 ](/Pictures/Figure9.png)
+
