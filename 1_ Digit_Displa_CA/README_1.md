@@ -194,3 +194,6 @@ The source code for the FPGA program written in VHDL is as follows:
 
 https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CA/HEX_to_1_Digit_CA.vhd
 
+The source code for the FPGA program written in Verilog is as follows:
+
+https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CA/HEX_to_1_Digit_CA.v
