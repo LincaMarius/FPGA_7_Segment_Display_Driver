@@ -62,6 +62,8 @@ We will see in Figure 1C that the designers of the Piswords PIAX301V2 board used
 This value is greater than the nominal value of 8 mA but is less than the maximum sinking current limit of 40 mA.
 
 ## Single digit display
+The design of a driver in FPGA for a 7 Segment LED display with a single Digit must be treated separately because the Adhesion command is done without multiplexing, and in the case where we have two or more digits we will use the multiplexed display which is treated separately.
+
 The design of a driver in FPGA for a single-digit 7-Segment LED Display is presented here:
 
 https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CA/README_1.md
