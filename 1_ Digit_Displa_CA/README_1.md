@@ -230,3 +230,6 @@ To test the code of the test application titled "Application 3" I created a Test
 
 ![ Figure 13 ](/Pictures/Figure13.png)
 
+The source code for the Test Bench of the application "Application 3" written in the VHDL language is here:
+
+https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CA/Aplication_3_tb.vhd
