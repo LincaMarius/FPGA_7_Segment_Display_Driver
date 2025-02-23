@@ -327,3 +327,9 @@ To test the correctness of the code, I created a test bench whose structure can 
 
 ![ Figure 19 ](/Pictures/Figure19.png)
 
+The 2 Hz signal is applied to a 128-count counter. Its outputs are applied directly as the “ASCII_in” input signal for the module under test. Bit 0 is applied as the “dp_in” input signal. Thus, the DP segment will light up every second indicating that the test is running.
+
+The source code for the test bench program written in VHDL is as follows:
+
+https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CA/ASCII_to_1_Digit_CA_tb.vhd
+

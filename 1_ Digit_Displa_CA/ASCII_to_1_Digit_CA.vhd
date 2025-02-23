@@ -37,37 +37,37 @@ begin
 						"0100001" WHEN "0001101", --x"0D", -- d, active b,c,d,e,g segments
 						"0000110" WHEN "0001110", --x"0E", -- E, active a,d,e,f,g segments
 						"0001110" WHEN "0001111", --x"0F", -- F, active a,e,f,g segments	
-				      "1111111" when "0100000", --x"20", -- Space, blank
-				      "1111001" when "0100001", --x"21", -- !, active b,c segments
-				      "1011101" when "0100010", --x"22", -- ", active b,f segments
-				      "1011111" when "0100111", --x"27", -- ', active f segment
-				      "1010110" when "0101000", --x"28", -- (, active a,d,f segments
-				      "1110100" when "0101001", --x"29", -- ), active a,b,d segments
-				      "1011110" when "0101010", --x"2A", -- *, active a,f segments
-				      "0001111" when "0101011", --x"2B", -- +, active e,f,g segments
-				      "1101111" when "0101100", --x"2C", -- ,, active e segment
-				      "0111111" when "0101101", --x"2D", -- -, active g segment
-				      "0101101" when "0101111", --x"2F", -- /, active b,e,g segment
-				      "1000000" when "0110000", --x"30", -- 0, active a,b,c,d,e,f segments
-					   "1111001" when "0110001", --x"31", -- 1, active b,c segments
-					   "0100100" when "0110010", --x"32", -- 2, active a,b,d,e,g segments
-					   "0110000" when "0110011", --x"33", -- 3, active a,b,c,d,g segments
-					   "0011001" when "0110100", --x"34", -- 4, active b,c,f,g segments
-					   "0010010" when "0110101", --x"35", -- 5, active a,c,d,f,g segments
-					   "0000010" when "0110110", --x"36", -- 6, active a,c,d,e,f,g segments  
-					   "1011000" when "0110111", --x"37", -- 7, active a,b,c,f segments
-					   "0000000" when "0111000", --x"38", -- 8, active a,b,c,d,e,f,g segments
-					   "0010000" when "0111001", --x"39", -- 9, active a,b,c,d,f,g segments
+						"1111111" when "0100000", --x"20", -- Space, blank
+						"1111001" when "0100001", --x"21", -- !, active b,c segments
+						"1011101" when "0100010", --x"22", -- ", active b,f segments
+						"1011111" when "0100111", --x"27", -- ', active f segment
+						"1010110" when "0101000", --x"28", -- (, active a,d,f segments
+						"1110100" when "0101001", --x"29", -- ), active a,b,d segments
+						"1011110" when "0101010", --x"2A", -- *, active a,f segments
+						"0001111" when "0101011", --x"2B", -- +, active e,f,g segments
+						"1101111" when "0101100", --x"2C", -- ,, active e segment
+						"0111111" when "0101101", --x"2D", -- -, active g segment
+						"0101101" when "0101111", --x"2F", -- /, active b,e,g segment
+						"1000000" when "0110000", --x"30", -- 0, active a,b,c,d,e,f segments
+						"1111001" when "0110001", --x"31", -- 1, active b,c segments
+						"0100100" when "0110010", --x"32", -- 2, active a,b,d,e,g segments
+						"0110000" when "0110011", --x"33", -- 3, active a,b,c,d,g segments
+						"0011001" when "0110100", --x"34", -- 4, active b,c,f,g segments
+						"0010010" when "0110101", --x"35", -- 5, active a,c,d,f,g segments
+						"0000010" when "0110110", --x"36", -- 6, active a,c,d,e,f,g segments  
+						"1011000" when "0110111", --x"37", -- 7, active a,b,c,f segments
+						"0000000" when "0111000", --x"38", -- 8, active a,b,c,d,e,f,g segments
+						"0010000" when "0111001", --x"39", -- 9, active a,b,c,d,f,g segments
 						"1100111" when "0111100", --x"3C", -- <, active d,e segments
-					   "0110111" when "0111101", --x"3D", -- =, active d,g segments
-					   "1110011" when "0111110", --x"3E", -- >, active c,d segments
+						"0110111" when "0111101", --x"3D", -- =, active d,g segments
+						"1110011" when "0111110", --x"3E", -- >, active c,d segments
 						"0101100" when "0111111", --x"3F", -- ?, active a,b,e,g segments
-					   "0100000" when "1000000", --x"40", -- @, active a,b,c,d,e,g segments
-					   "0001000" when "1000001", --x"41", -- A, active a,b,c,e,f,g segments
-					   "0000011" when "1000010", --x"42", -- b, active c,d,e,f,g segments
-					   "1000110" when "1000011", --x"43", -- C, active a,d,e,f segments
-					   "0100001" when "1000100", --x"44", -- d, active b,c,d,e,g segments
-					   "0000110" when "1000101", --x"45", -- E, active a,d,e,f,g segments
+						"0100000" when "1000000", --x"40", -- @, active a,b,c,d,e,g segments
+						"0001000" when "1000001", --x"41", -- A, active a,b,c,e,f,g segments
+						"0000011" when "1000010", --x"42", -- b, active c,d,e,f,g segments
+						"1000110" when "1000011", --x"43", -- C, active a,d,e,f segments
+						"0100001" when "1000100", --x"44", -- d, active b,c,d,e,g segments
+						"0000110" when "1000101", --x"45", -- E, active a,d,e,f,g segments
 						"0001110" when "1000110", --x"46", -- F, active a,e,f,g segments
 						"1000010" when "1000111", --x"47", -- G, active a,c,d,e,f segments 
 						"0001001" when "1001000", --x"48", -- H, active b,c,e,f,g segments
