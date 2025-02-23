@@ -5,26 +5,26 @@ use IEEE.STD_LOGIC_1164.ALL;
 -- ASCII to one Digit 7-Segment Common Anode Display FPGA Driver
 
 entity Aplication_5 is
-    Port (
+	Port (
 		clk50MHz: in STD_LOGIC; -- Main clock 50 MHz
 		rst_n: in STD_LOGIC; -- Reset button
 		Segments: out STD_LOGIC_VECTOR (6 downto 0); -- Cathode segments control outputs 
 		dp: out STD_LOGIC; -- DP on Piswords PIAX301V2 FPGA board control output
 		SEL7:	out STD_LOGIC -- SEL7 on Piswords PIAX301V2 FPGA board control output
-		);		
+	);		
 end Aplication_5;
 
 architecture Behavioral of Aplication_5 is
 
 -- we declare the components
 component ASCII_to_1_Digit_CA is
-    Port (
+	Port (
 		ASCII_in: in STD_LOGIC_VECTOR (6 downto 0); -- ASCII data input
 		dp_in: in STD_LOGIC; -- DP signal
 		Segments: out STD_LOGIC_VECTOR (6 downto 0); -- Cathode segments 
 		dp: out STD_LOGIC; -- DP on Piswords PIAX301V2 FPGA board
 		SEL7:	out STD_LOGIC -- SEL7 on Piswords PIAX301V2 FPGA board
-		);
+	);
 end component;
 
 component Clk_2Hz is
