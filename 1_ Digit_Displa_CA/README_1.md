@@ -143,3 +143,7 @@ To test the correctness of the code, I created a test bench whose structure can 
 The source code for the test bench program written in VHDL is as follows:
 
 https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CC/BCD_to_1_Digit_CC_tb.vhd
+
+The source code for the test bench program written in the Verilog language is as follows:
+
+https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CC/BCD_to_1_Digit_CC_tb.v
