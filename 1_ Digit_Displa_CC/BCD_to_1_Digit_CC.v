@@ -5,8 +5,7 @@ module BCD_to_1_Digit_CC (
 	input [3:0] BCD_in,
 	input dp_in,
 	output reg [6:0] Segments,
-	output dp,
-	output SEL7
+	output dp
 	);
 
 always @(*)

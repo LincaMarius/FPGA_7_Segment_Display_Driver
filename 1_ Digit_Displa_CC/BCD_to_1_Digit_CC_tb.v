@@ -10,7 +10,6 @@ wire[3:0] BCD_tb;
 // output signals of the module under test
 wire[6:0] SEG_tb;
 reg dp_tb;
-reg SEL7_tb;
 
 // other input signals
 reg clk_tb;
@@ -35,8 +34,7 @@ BCD_to_1_Digit_CC dut
 	.BCD_in		(BCD_tb),
 	.dp_in		(BCD_tb[0]),
 	.Segments 	(SEG_tb),
-	.dp			(dp_tb),
-	.SEL7			(SEL7_tb)
+	.dp			(dp_tb)
 );
 
 // we declare other components that help the test

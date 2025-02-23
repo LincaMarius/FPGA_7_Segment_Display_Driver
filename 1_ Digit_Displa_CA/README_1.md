@@ -169,3 +169,7 @@ To test the code of the test application titled "Application 2" I created a Test
 The source code for the Test Bench of the application "Application 2" written in the VHDL language is here:
 
 https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CC/Aplication_2_tb.vhd
+
+The source code for the Test Bench of the application "Application 2" written in the Verilog language is here:
+
+https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CC/Aplication_2_tb.v

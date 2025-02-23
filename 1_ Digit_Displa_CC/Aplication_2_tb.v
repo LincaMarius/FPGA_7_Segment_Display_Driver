@@ -1,10 +1,10 @@
 `timescale 1ns/1ns
 
-// Verilog code for test bench for Aplication 1
+// Verilog code for test bench for Aplication 2
 // who uses
-// BCD to one Digit 7-Segment Display FPGA Driver
+// BCD to one Digit 7-Segment Common Chatode Display FPGA Driver
 
-module Aplication_1_tb;
+module Aplication_2_tb;
 
 // input signals of the mode under test
 reg clk50MHz_tb;
@@ -27,13 +27,12 @@ end
 always#10 clk50MHz_tb = ~clk50MHz_tb;
 
 // we declare the components under test
-Aplication_1 dut
+Aplication_2 dut
 (
 	.clk50MHz	(clk50MHz_tb),
 	.rst_n		(rst_n),
 	.Segments 	(SEG_tb),
-	.dp			(dp_tb),
-	.SEL7			(SEL7_tb)
+	.dp			(dp_tb)
 );
 	
 endmodule 

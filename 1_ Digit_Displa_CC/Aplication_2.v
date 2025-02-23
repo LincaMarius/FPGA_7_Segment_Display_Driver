@@ -6,8 +6,7 @@ module Aplication_2 (
 	input clk50MHz, // Main clock 50 MHz
 	input rst_n, // Reset button
 	output [6:0] Segments, // Cathode segments control outputs 
-	output dp, // DP on Piswords PIAX301V2 FPGA board control output
-	output SEL7 // SEL7 on Piswords PIAX301V2 FPGA board control output
+	output dp // DP on Piswords PIAX301V2 FPGA board control output
 );	
 
 // signals for connection between modules
@@ -20,8 +19,7 @@ BCD_to_1_Digit_CC decoder
 	.BCD_in		(BCD_data),
 	.dp_in		(BCD_data[0]),
 	.Segments 	(Segments),
-	.dp			(dp),
-	.SEL7			(SEL7)
+	.dp			(dp)
 );
 
 Clk_2Hz clk_2Hz
