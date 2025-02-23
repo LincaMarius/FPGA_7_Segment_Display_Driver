@@ -254,3 +254,9 @@ The module has:
 - 1 output pin for controlling the Decimal Point of the 7 Segment display = dp;
 
 The source code for the FPGA program of this module written in the VHDL language is as follows:
+
+https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CC/HEX_to_1_Digit_CC.vhd
+
+The source code for the FPGA program written in Verilog is as follows:
+
+https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CC/HEX_to_1_Digit_CC.v
