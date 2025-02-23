@@ -309,7 +309,7 @@ The module implemented in the FPGA is shown in Figure 18 and consists of a decod
 ![ Figure 18 ](/Pictures/Figure18.png)
 
 The module has:
-- 4 input pins for data where the ASCII code is presented = ASCII_in;
+- 7 input pins for data where the ASCII code is presented = ASCII_in;
 - 1 input pin for control of the Decimal Point = dp_in;
 - 7 output pins for controlling segments a to g of the 7 Segment display = Segments;
 - 1 output pin for controlling the Decimal Point of the 7 Segment display = dp;
@@ -318,4 +318,8 @@ The module has:
 The source code for the FPGA program written in VHDL is as follows:
 
 https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CA/ASCII_to_1_Digit_CA.vhd
+
+The source code for the FPGA program written in Verilog is as follows:
+
+https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CA/ASCII_to_1_Digit_CA.v
 
