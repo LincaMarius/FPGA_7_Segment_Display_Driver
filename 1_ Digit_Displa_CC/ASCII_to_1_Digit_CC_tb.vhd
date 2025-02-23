@@ -3,13 +3,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- VHDL code for test bench for ASCII to one Digit 7-Segment Display FPGA Driver
 
-entity ASCII_to_1_Digit_CA_tb is	
-end ASCII_to_1_Digit_CA_tb;
+entity ASCII_to_1_Digit_CC_tb is	
+end ASCII_to_1_Digit_CC_tb;
 
-architecture testbench of ASCII_to_1_Digit_CA_tb is
+architecture testbench of ASCII_to_1_Digit_CC_tb is
 
 -- we declare the components under test
-component ASCII_to_1_Digit_CA is
+component ASCII_to_1_Digit_CC is
     Port (
 		ASCII_in: in STD_LOGIC_VECTOR (6 downto 0); -- ASCII data input
 		dp_in: in STD_LOGIC; -- DP signal
@@ -64,7 +64,7 @@ begin
 end process;
 
 -- unit under test port maping           
-uut : component ASCII_to_1_Digit_CA port map (
+uut : component ASCII_to_1_Digit_CC port map (
 	ASCII_in => ASCII_tb,
 	dp_in => ASCII_tb(0),
 	Segments => SEG_tb,
