@@ -382,3 +382,7 @@ The source code for the FPGA program of this module written in the VHDL language
 
 https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CC/ASCII_to_1_Digit_CC.vhd
 
+The source code for the FPGA program written in Verilog is as follows:
+
+https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CC/ASCII_to_1_Digit_CC.v
+
