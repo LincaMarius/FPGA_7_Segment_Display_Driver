@@ -404,3 +404,7 @@ A representation of the modules used and the connection signals between them is 
 
 ![ Figure 24 ](/Pictures/Figure24.png)
 
+The source code for the test application written in VHDL is here:
+
+https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CC/Aplication_6.vhd
+
