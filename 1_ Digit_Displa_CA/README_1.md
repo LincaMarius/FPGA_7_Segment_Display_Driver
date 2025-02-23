@@ -343,3 +343,7 @@ A representation of the modules used to create the application and the connectio
 
 ![ Figure 20 ](/Pictures/Figure20.png)
 
+The source code for the test application written in VHDL is here:
+
+https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CA/Aplication_5.vhd
+
