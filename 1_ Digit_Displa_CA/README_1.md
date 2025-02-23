@@ -372,3 +372,13 @@ The module implemented in the FPGA is shown in figure 22 and consists of an ASCI
 
 ![ Figure 22 ](/Pictures/Figure22.png)
 
+The module has:
+- 7 input pins for data where the binary code is presented = ASCII_in;
+- 1 input pin for control of the Decimal Point = dp_in;
+- 7 output pins for controlling the segments from a to g of the 7 Segment display = Segments;
+- 1 output pin for controlling the Decimal Point of the 7 Segment display = dp;
+
+The source code for the FPGA program of this module written in the VHDL language is as follows:
+
+https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CC/ASCII_to_1_Digit_CC.vhd
+
