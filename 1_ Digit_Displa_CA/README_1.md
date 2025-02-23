@@ -300,11 +300,22 @@ The source code for the Test Bench of the application "Application 4" written in
 https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CC/Aplication_4_tb.v
 
 ## Display ASCII alphanumeric character on a 7 Segment Common Anode LED display
-1B, 1C and 1D. For other development boards, the number for each connected pin is changed accordingly.
+Connecting the 7 Segment Common Anode LED display to the FPGA chip is done as in figures 1B, 1C and 1D. For other development boards, the number for each connected pin is changed accordingly.
 
 Seg0 to Seg6 represent the Segment command, which corresponds to segments a to g of the 7-segment display. BP is the Decimal Point command. SEL5 is the Select Digit 5 command, and SEL7 is the Select Digit 7 command.
 
 The module implemented in the FPGA is shown in Figure 18 and consists of a decoder from ASCII code to 7 Segments.
 
 ![ Figure 18 ](/Pictures/Figure18.png)
+
+The module has:
+- 4 input pins for data where the ASCII code is presented = ASCII_in;
+- 1 input pin for control of the Decimal Point = dp_in;
+- 7 output pins for controlling segments a to g of the 7 Segment display = Segments;
+- 1 output pin for controlling the Decimal Point of the 7 Segment display = dp;
+- 1 output pin for controlling SEL5 or SEL7 in the case of embedded displays = SEL7.
+
+The source code for the FPGA program written in VHDL is as follows:
+
+https://github.com/LincaMarius/FPGA_7_Segment_Display_Driver/blob/main/1_%20Digit_Displa_CA/ASCII_to_1_Digit_CA.vhd
 
