@@ -88,3 +88,5 @@ This saves 48 pins and 48 resistors
 The number of pins can be reduced by another 5 if an external 3 to 8 decoder is used, with a total of only 11 pins needed to control an 8-digit display compared to 64 pins for direct control!
 
 The design of a driver in FPGA for a 7 Segment LED Display with multiple digits is presented here:
+The design of a driver in FPGA for a 7 Segment LED Display with multiple digits is presented here:
+
